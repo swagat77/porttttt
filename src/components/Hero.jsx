@@ -48,7 +48,11 @@ const StyledHero = styled.header`
         : "rgba(0, 0, 0, 0.2)"};
     z-index: -1;
   }
-
+  .parent-container {
+    display: flex;
+    justify-content: space-between; /* This pushes the down-container to the right */
+    align-items: center;
+  }
   .down-container {
     height: 10rem;
   }

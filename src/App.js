@@ -19,7 +19,7 @@ import Home from "./pages/Home";
 import AllProjects from "./pages/AllProjects";
 import NotFound from "./pages/NotFound";
 
-const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const  darkMode= window.matchMedia("(prefers-color-scheme: dark)").matches;
 const themes = {
   light: {
     name: "light",
@@ -30,7 +30,7 @@ const themes = {
     name: "dark",
     color: "#FBFDFF",
     background: "#27272A",
-  },
+  }
 };
 
 export default function App() {
@@ -42,7 +42,7 @@ export default function App() {
   React.useEffect(
     function () {
       const updateTheme = () =>
-        darkMode ? setTheme("dark") : setTheme("light");
+       darkMode ? setTheme("light"):setTheme("dark") 
       updateTheme();
       dispatch(fetchGitHubInfo());
       dispatch(fetchGitHubReops());
@@ -53,7 +53,7 @@ export default function App() {
   window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", (e) =>
-      e.matches ? setTheme("dark") : setTheme("light")
+      e.matches ?   setTheme("light"):setTheme("dark")
     );
 
   if (isLoading) {

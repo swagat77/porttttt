@@ -7,11 +7,15 @@ import {
   FaGitAlt,
   FaGithubSquare,
   FaLink,
+  FaLinux,
+  FaAws
+  
 } from "react-icons/fa";
-import { SiJavascript, SiStyledcomponents, SiRedux } from "react-icons/si";
+import { SiJavascript, SiSpringboot, SiJava, SiPython,SiC } from "react-icons/si";
 
 // Projects Images (add your images to the images directory and import below)
 import Logo from "./images/logo.svg";
+// import Log from "./images/linkedin.svg";
 
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
@@ -24,7 +28,7 @@ export { HeroDark as Dark };
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "swagat77";
 
 // Blog link icon (imported above)
 export const Blog = <FaLink />;
@@ -33,8 +37,7 @@ export const Blog = <FaLink />;
  **************************************************************
   Add a second paragraph for the about me section.
 */
-export const moreInfo =
-  "I enjoy learning about technology and helping others use it to improve their lives and be more productive. I built this site with React, React Bootstrap, Redux, and the GitHub REST API.";
+export const moreInfo = <h4>"Hi, I'm Swagat Pandak, a software engineering student at the University of Texas at Arlington. I have a strong background in programming, with expertise in Java, Python, JavaScript, C, HTML, CSS, React, Node.js, and Spring Boot. In addition to my technical skills, I have experience teaching and mentoring students, helping them improve their programming and SQL abilities. I'm also passionate about math and have taught Calculus III in the past."</h4>;
 
 /* Skills
  ************************************************************** 
@@ -68,39 +71,54 @@ export const skillData = [
   },
   {
     id: 6,
-    skill: <SiStyledcomponents className="display-4" />,
-    name: "Styled Components",
+    skill: <SiSpringboot className="display-4" />,
+    name: "Springboot",
   },
   {
     id: 7,
-    skill: <SiRedux className="display-4" />,
-    name: "Redux",
+    skill: <SiJava className="display-4" />,
+    name: "Java",
   },
   {
     id: 8,
-    skill: <FaGitAlt className="display-4" />,
-    name: "Git",
+    skill: <SiPython className="display-4" />,
+    name: "Python",
   },
   {
     id: 9,
     skill: <FaGithubSquare className="display-4" />,
     name: "GitHub",
   },
+  {
+    id: 10,
+    skill: <FaLinux className="display-4" />,
+    name: "Linux",
+  },
+  {
+    id: 11,
+    skill: <SiC className="display-4" />,
+    name: "C",
+  },
+  {
+  id: 12,
+  skill: <FaAws className="display-4" />,
+  name: "AWS",
+}
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
-export const resume = null;
+export const resume = "https://drive.google.com/file/d/1Ovz6pNNe3XwhBXpleTWr13PaRIjyI1lE/view?usp=sharing";
 
 /* Projects
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["example-1", "example-2", "example-3"];
+export const filteredProjects = ["Movie-review", "CloudCast", "Serve Me System", "Car-Rental-System", "Java-And-Donut-Express"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 13-14)
 export const projectCardImages = [
   {
-    name: "example-1",
+    name: "Movie-review",
     image: Logo,
   },
 ];
@@ -110,4 +128,4 @@ export const projectCardImages = [
   Add your formspree endpoint below.
   https://formspree.io/
 */
-export const formspreeUrl = "https://formspree.io/f/YourEndpoint";
+export const formspreeUrl = "https://formspree.io/f/mnqydrko";
